@@ -230,8 +230,10 @@ h2 {
 }
 
 .features-slogans {
+  position: relative;
   padding: 44px 0 22px 0;
   background-color: #eeeeee;
+  z-index: 9;
 }
 
 .features-item-slogan {
@@ -274,7 +276,8 @@ h2 {
 }
 
 .features-booking p {
-  margin: 15px 0 5px 0;
+  /*margin: 15px 0 5px 0;*/
+  margin: 0;
   padding: 0 120px 128px;
   font-size: 14px;
   line-height: 24px;
@@ -283,21 +286,28 @@ h2 {
 
 .booking-block {
   display: block;
+  position: relative;
+  background: #ffffff;
+  z-index: 9;
+}
+
+.booking-title,
+.booking-form {
   position: absolute;
-  top: 205px;
   width: 566px;
   left: 50%;
   margin-left: -283px;
-  background: rgba(237, 237, 237, 1);
 }
 
 .booking-title {
   display: block;
+  top: 185px;
   font-size: 21px;
   font-weight: bold;
   line-height: 24px;
   color: #ffffff;
   background-color: #766357;
+  z-index: 10;
 }
 
 .booking-title h4 {
@@ -306,6 +316,9 @@ h2 {
 }
 
 .booking-form {
+  display: block;
+  top: 271px;
+  box-sizing: border-box;
   padding: 55px;
   font-size: 14px;
   font-weight: bold;
@@ -505,9 +518,9 @@ h2 {
 }
 
 .main-footer_index {
-  z-index: 1;
   margin-top: -120px;
   background: rgba(255, 255, 255, 0.9);
+  z-index: 1;
 }
 
 .footer-title,
