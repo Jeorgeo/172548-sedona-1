@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: normal;
@@ -204,12 +204,16 @@ h2 {
   vertical-align: top;
   width: 33%;
   margin: 0;
-  padding: 57px 55px 46px 32px;
+  padding: 57px 46px 46px 46px;
 }
 
-.features-icon .icons,
-.features-icon h4 {
-  padding-left: 21px;
+.features-icon:last-child {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  margin: 0;
+  padding: 57px 46px 46px 32px;
 }
 
 .features-icon h4 {
@@ -376,12 +380,14 @@ h2 {
 
 .booking-people.adults {
   display: inline-block;
+  vertical-align: top;
   width: 222px;
   margin: 0;
 }
 
 .booking-people.children {
   display: inline-block;
+  vertical-align: top;
   width: 230px;
   margin: 0;
 }
@@ -605,7 +611,7 @@ h2 {
   width: 100%;
   min-height: 215px;
   padding: 0 6% 4px 6%;
-  background: url("../img/hotels-background.jpg") no-repeat left 30%;
+  background: #81b3d2 url("../img/hotels-background.jpg") no-repeat left 30%;
   color: #ffffff;
 }
 
@@ -896,16 +902,20 @@ h2 {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid #cccccc;
+  border-top: 10px solid #cccccc;
 }
 
 .increase:hover {
-  border-bottom: 10px solid #000000;
+  border-top: 10px solid #000000;
   cursor: pointer;
 }
 
 .increase:active {
-  border-bottom: 10px solid #81b3d2;
+  border-top: 10px solid #81b3d2;
+}
+
+.increase.active {
+  border-top: 10px solid #81b3d2;
 }
 
 .descrease {
@@ -920,20 +930,20 @@ h2 {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #cccccc;
+  border-bottom: 10px solid #cccccc;
 }
 
 .descrease:hover {
-  border-top: 10px solid #000000;
+  border-bottom: 10px solid #000000;
   cursor: pointer;
 }
 
 .descrease:active {
-  border-top: 10px solid #81b3d2;
+  border-bottom: 10px solid #81b3d2;
 }
 
 .descrease.active {
-  border-top: 10px solid #81b3d2;
+  border-bottom: 10px solid #81b3d2;
 }
 
 .hotel-container {
