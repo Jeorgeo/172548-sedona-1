@@ -315,6 +315,10 @@ h2 {
   margin: 0;
 }
 
+.booking-title:hover {
+  cursor: pointer;
+}
+
 .booking-form {
   display: block;
   top: 271px;
@@ -1111,4 +1115,45 @@ h2 {
   margin-top: 64px;
   padding: 3px 0;
   background-color: #f2f2f2;
+}
+
+/* for JS */
+
+
+@keyframes form-floating {
+  0% {
+    top: -130px;
+  }
+  50% {
+     top: 0px;
+  }
+  100% {
+     top: 271px;
+  }
+}
+
+@keyframes form-floating-reverse {
+  0% {
+    top: 271px;
+  }
+  50% {
+     top: 0px;
+  }
+  100% {
+     top: -130px;
+  }
+}
+
+.form-hide {
+  top: -130px;
+}
+
+.form-popup {
+  animation-name: form-floating;
+  animation-duration: 1s;
+}
+
+.form-hiding {
+  animation-name: form-floating-reverse;
+  animation-duration: 1s;
 }
